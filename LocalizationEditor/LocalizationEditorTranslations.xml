@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LocalizationFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Values>
+    <LocalizationValue>
+      <Key>MsgDeleteKey</Key>
+      <DefaultValue>Do you really want to delete the key ({0})?</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Möchten Sie wirklich den Key ({0}) löschen?</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>MsgRemoveLanguage</Key>
+      <DefaultValue>Do you really want to remove the complete language ({0}) including all values?</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Möchten Sie wirklich die gesamte Sprache ({0}) mit allen zugehörigen Werten löschen?</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>MsgSaveFile</Key>
+      <DefaultValue>Do you want to save the file?</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Möchten Sie die Datei speichern?</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiAddLanguage</Key>
+      <DefaultValue>Add Language</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Sprache hinzufügen</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiAlphabetASC</Key>
+      <DefaultValue>Alphabetically ascending</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Alphabetisch aufsteigend</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiAlphabetDESC</Key>
+      <DefaultValue>Alphabetically descending</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Alphabetisch absteigend</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiAssembly</Key>
+      <DefaultValue>Assembly</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE" />
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiAssemblyASC</Key>
+      <DefaultValue>Assembly ascending</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Assembly aufsteigend</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiAssemblyDESC</Key>
+      <DefaultValue>Assembly descending</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE" />
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiDefaultEnglish</Key>
+      <DefaultValue>Default/English</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Standard/Englisch</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiDeleteKey</Key>
+      <DefaultValue>Delete Key</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Lösche Key</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiEnglish</Key>
+      <DefaultValue>English</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Englisch</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiEnterLanguageKey</Key>
+      <DefaultValue>Enter Language Key</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Sprach-Schlüsselwort eingeben</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiFile</Key>
+      <DefaultValue>File</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Datei</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiFilter</Key>
+      <DefaultValue>Filter</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE" />
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiGerman</Key>
+      <DefaultValue>German</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Deutsch</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiHelp</Key>
+      <DefaultValue>Help</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Hilfe</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiHowTo</Key>
+      <DefaultValue>How To</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE" />
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiKey</Key>
+      <DefaultValue>Key</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE" />
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiLanguage</Key>
+      <DefaultValue>Language</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Sprache</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiOpen</Key>
+      <DefaultValue>Open</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Öffnen</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiRemoveLanguage</Key>
+      <DefaultValue>Remove Language</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Sprache entfernen</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiSave</Key>
+      <DefaultValue>Save</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Speichern</LocalValue>
+      </LocalValues>
+      <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+  </Values>
+</LocalizationFile>

@@ -3,3 +3,8 @@
 ################################################################################
 
 /ExampleProject/bin/Debug
+/ExampleProject/obj/Debug
+/Localization/bin/Debug
+/Localization/obj/Debug
+/LocalizationEditor/bin/Debug
+/LocalizationEditor/obj/Debug

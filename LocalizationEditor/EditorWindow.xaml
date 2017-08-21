@@ -1,0 +1,113 @@
+﻿<Window x:Class="LocalizationEditor.EditorWindow" Name="Root"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocalizationEditor"
+        xmlns:loc="clr-namespace:Localization;assembly=Localization"
+        mc:Ignorable="d"
+        Title="Localization Editor Window" Height="1000" Width="1000" KeyDown="Root_KeyDown" Closing="Root_Closing">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+            <MenuItem Header="{loc:Loc UiFile}">
+                <MenuItem Header="{loc:Loc UiOpen}" Click="OpenFile_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Images/openfile.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="{loc:Loc UiSave}" Click="OnSave_Click" IsEnabled="{Binding IsFileLoaded, ElementName=Root, UpdateSourceTrigger=PropertyChanged}">
+                    <MenuItem.Icon>
+                        <Image Source="Images/save.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="{loc:Loc UiAddLanguage}" Click="OnAddLanguage_Click" IsEnabled="{Binding IsFileLoaded, ElementName=Root, UpdateSourceTrigger=PropertyChanged}">
+                    <MenuItem.Icon>
+                        <Image Source="Images/add.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="{loc:Loc UiRemoveLanguage}" IsEnabled="{Binding IsFileLoaded, ElementName=Root, UpdateSourceTrigger=PropertyChanged}" x:Name="DeleteLanguage">
+                    <MenuItem.Icon>
+                        <Image Source="Images/deselect.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="{loc:Loc UiLanguage}">
+                <MenuItem Header="{loc:Loc UiEnglish}" Click="OnEnglish_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Images/Flags/en-US.png" MaxHeight="20" MaxWidth="20"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="{loc:Loc UiGerman}" Click="OnGerman_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Images/Flags/de-DE.png" MaxHeight="20" MaxWidth="20"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="{loc:Loc UiHelp}">
+                <MenuItem Header="{loc:Loc UiHowTo}" Click="OnHowTo_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Images/help.png" MaxHeight="20" MaxWidth="20"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <ComboBox Grid.Row="1" Grid.Column="0" Margin="0,5" x:Name="DictSorting" />
+
+        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5,0" Text="{loc:Loc UiFilter}" />
+        <TextBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Text="{Binding Filter, ElementName=Root, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <ListView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,5,0" x:Name="lstViewDict">
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="{loc:Loc UiDeleteKey}" Click="OnDeleteKey_Click"/>
+                </ContextMenu>
+            </ListView.ContextMenu>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="{loc:Loc UiKey}" DisplayMemberBinding="{Binding Key}"/>
+                    <GridViewColumn Header="{loc:Loc UiAssembly}" DisplayMemberBinding="{Binding AssemblyName}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" x:Name="DefaultCol"/>
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="{loc:Loc UiKey}" Margin="0,20,0,0" VerticalAlignment="Center" />
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="5,20,0,0" Text="{Binding SelectedItem.Key, ElementName=lstViewDict, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="{loc:Loc UiAssembly}" VerticalAlignment="Center" />
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="5,5,0,5" Text="{Binding SelectedItem.AssemblyName, ElementName=lstViewDict, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="{loc:Loc UiDefaultEnglish}" VerticalAlignment="Center" />
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5,5,0,5" Text="{Binding SelectedItem.DefaultValue, ElementName=lstViewDict, UpdateSourceTrigger=PropertyChanged}"/>
+            <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" x:Name="LocalValuesGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" x:Name="LocalCol"/>
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>
