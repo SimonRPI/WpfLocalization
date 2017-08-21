@@ -15,9 +15,11 @@ How To Localization
 3. Create a method for the application startup in App.xaml.cs, set this method in App.xaml and initialize the Localization Dictionary
 
 	App.xaml:
-	Startup="Application_Startup"
+	`Startup="Application_Startup"`
 	
 	App.xaml.cs
+	
+	```
 	private void Application_Startup(object sender, StartupEventArgs e)
 	{
 		var assemblies = new List<Assembly>();
@@ -28,6 +30,7 @@ How To Localization
 		var main = new MainWindow();
 		main.Show();
 	}
+	```
 	   
 4. Add for every translatable string a key(name) in the Resources.resx and leave Value empty    
 5. Start the application - the localization file will be created    
@@ -37,25 +40,25 @@ How To Localization
 Usage
 - Binding in *.xaml
 	1. Add reference
-		xmlns:loc="clr-namespace:Localization;assembly=Localization"
+		`xmlns:loc="clr-namespace:Localization;assembly=Localization"`
 	2. Set binding to key that is registered in Resources.resx
-		Header="{loc:Loc UiOpen}"
+		`Header="{loc:Loc UiOpen}"`
 
 - Code behind *.cs
 	1. Add reference
-		using Localization;
+		`using Localization;`
 	2. Key without parameters
-		string translatedKey = LocDict.Instance.Get(nameof(Properties.Resources.MsgSaveFile));
+		`string translatedKey = LocDict.Instance.Get(nameof(Properties.Resources.MsgSaveFile));`
 	3. Key with parameters
-		string translatedKey = LocDict.Instance.Get(nameof(Properties.Resources.MsgSaveFile), nameof(Properties.Resources.TranslateableParamter), "ParameterWithoutTranslation", "4");
+		`string translatedKey = LocDict.Instance.Get(nameof(Properties.Resources.MsgSaveFile), nameof(Properties.Resources.TranslateableParamter), "ParameterWithoutTranslation", "4");`
 		
 
 Change language
 - English/Default	
-    LocDict.Instance.CurrentCulture = CultureInfo.InvariantCulture;
+    `LocDict.Instance.CurrentCulture = CultureInfo.InvariantCulture;`
 	
--Other language
-	LocDict.Instance.CurrentCulture = new CultureInfo("de-DE");
+- Other language
+	`LocDict.Instance.CurrentCulture = new CultureInfo("de-DE");`
 
 
 Note
