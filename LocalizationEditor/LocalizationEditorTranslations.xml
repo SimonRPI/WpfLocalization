@@ -69,7 +69,7 @@
       <Key>UiAssemblyDESC</Key>
       <DefaultValue>Assembly descending</DefaultValue>
       <LocalValues>
-        <LocalValue Culture="de-DE" />
+        <LocalValue Culture="de-DE">Assembly absteigend</LocalValue>
       </LocalValues>
       <AssemblyName>LocalizationEditor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
     </LocalizationValue>

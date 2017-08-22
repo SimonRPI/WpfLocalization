@@ -190,7 +190,6 @@ namespace Localization
         public void Initialize(string translationFileName, List<Assembly> assemblies)
         {
             this.fileName = translationFileName;
-            bool updateFile = false;
 
             // reads the translations source file
             this.fileIOHandler = new LocalizationXmlIOHandler();
@@ -219,7 +218,6 @@ namespace Localization
                                 {
                                     var resourceValue = (string)entry.Value;
                                     this.Dictionary.Add(new LocalizationValue(resourceKey, resourceValue, assembly.FullName, this.LocalCultures)); // add new key to dict
-                                    updateFile = true;
                                 }
                             }
                         }
@@ -228,19 +226,16 @@ namespace Localization
             }
 
             // update the source file
-            if (updateFile == true)
-            {
-                this.fileIOHandler.WriteFile(this.fileName, this.locFile);
+            this.fileIOHandler.WriteFile(this.fileName, this.locFile);
 
-                // get project folder to update the localization source file 
-                var projectPath = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)));
-                if (projectPath != null)
+            // get project folder to update the localization source file 
+            var projectPath = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)));
+            if (projectPath != null)
+            {
+                var filePath = Directory.GetFiles(projectPath, this.fileName, SearchOption.AllDirectories).FirstOrDefault(x => Path.GetDirectoryName(x) != Environment.CurrentDirectory);
+                if (filePath != null)
                 {
-                    var filePath = Directory.GetFiles(projectPath, this.fileName, SearchOption.AllDirectories).FirstOrDefault(x => Path.GetDirectoryName(x) != Environment.CurrentDirectory);
-                    if (filePath != null)
-                    {
-                        File.Copy(this.fileName, filePath, true);
-                    }
+                    File.Copy(this.fileName, filePath, true);
                 }
             }
         }

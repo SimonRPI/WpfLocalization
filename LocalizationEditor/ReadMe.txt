@@ -1,13 +1,3 @@
-# WpfLocalization
-Localization/Language-Selection for WPF
-
-This is a simple tool for WPF localization.
-- only one Resource.resx file containing all different languages
-- change language on runtime
-- binding in xaml and code behind possible
-- generate strings with parameters
-- tool to edit and maintain the different languages
-
 How To Localization  
  
 1. Add the reference to the assembly 'Localization' to your project   

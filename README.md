@@ -34,7 +34,9 @@ How To Localization
 	   
 4. Add for every translatable string a key(name) in the Resources.resx and leave Value empty    
 5. Start the application - the localization file will be created    
-6. Copy the created file from Debug/Release to your main project and add it to your project. Set the file to "Content" and "Copy always"     
+6. Copy the created file from Debug/Release to your main project and add it to your project. Through this, after every start the file will be updated and ensures you a backup of the localization file. Set the file to "Content". You have two options now: set the file to 
+- "Copy always": you don't want to start the editor from your application. You can leave the editor in a different directory and edit the localization file in your project
+- "Do not Copy": you want to start the editor form your application. The editor is normally in your Debug/Release directory and you edit the localization file in this directory
 7. Now you can add with the Localization Editor a different language to your file (e.g. 'de-DE' for German) and translate all keys");
 
 Usage

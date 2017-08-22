@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LocalizationFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Values>
+    <LocalizationValue>
+      <Key>MsgChangeLanguage</Key>
+      <DefaultValue>Change the language and click again</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Ändere die Sprache und klick nochmal</LocalValue>
+      </LocalValues>
+      <AssemblyName>ExampleProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>MsgWithParameter</Key>
+      <DefaultValue>Message with a translatable parameter ({0}) and a {1}</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Nachricht mit einem übersetzbaren Parameter ({0}) und einem {1}</LocalValue>
+      </LocalValues>
+      <AssemblyName>ExampleProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiClick</Key>
+      <DefaultValue>Click</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Klick</LocalValue>
+      </LocalValues>
+      <AssemblyName>ExampleProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiClickParameter</Key>
+      <DefaultValue>Here also!</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Hier auch!</LocalValue>
+      </LocalValues>
+      <AssemblyName>ExampleProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiEnglish</Key>
+      <DefaultValue>English</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Englisch</LocalValue>
+      </LocalValues>
+      <AssemblyName>ExampleProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiGerman</Key>
+      <DefaultValue>German</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Deutsch</LocalValue>
+      </LocalValues>
+      <AssemblyName>ExampleProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiLanguage</Key>
+      <DefaultValue>Language</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Sprache</LocalValue>
+      </LocalValues>
+      <AssemblyName>ExampleProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+    <LocalizationValue>
+      <Key>UiOpenEditor</Key>
+      <DefaultValue>Open Editor</DefaultValue>
+      <LocalValues>
+        <LocalValue Culture="de-DE">Öffne Editor</LocalValue>
+      </LocalValues>
+      <AssemblyName>ExampleProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+    </LocalizationValue>
+  </Values>
+</LocalizationFile>
